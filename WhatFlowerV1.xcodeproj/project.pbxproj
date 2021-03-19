@@ -60,15 +60,47 @@
 		3A0DE359260501A500BC0E2A /* WhatFlowerV1 */ = {
 			isa = PBXGroup;
 			children = (
-				3A0DE35A260501A500BC0E2A /* AppDelegate.swift */,
-				3A0DE35C260501A500BC0E2A /* SceneDelegate.swift */,
-				3A0DE35E260501A500BC0E2A /* ViewController.swift */,
-				3A0DE360260501A500BC0E2A /* Main.storyboard */,
-				3A0DE363260501A500BC0E2A /* Assets.xcassets */,
-				3A0DE365260501A500BC0E2A /* LaunchScreen.storyboard */,
-				3A0DE368260501A500BC0E2A /* Info.plist */,
+				3A0DE3792605040900BC0E2A /* Model */,
+				3A0DE37A2605040E00BC0E2A /* View */,
+				3A0DE37B2605041E00BC0E2A /* Controller */,
+				3A0DE37C2605042600BC0E2A /* Supporting Files */,
 			);
 			path = WhatFlowerV1;
+			sourceTree = "<group>";
+		};
+		3A0DE3792605040900BC0E2A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3A0DE37A2605040E00BC0E2A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3A0DE360260501A500BC0E2A /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3A0DE37B2605041E00BC0E2A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3A0DE35E260501A500BC0E2A /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3A0DE37C2605042600BC0E2A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A0DE363260501A500BC0E2A /* Assets.xcassets */,
+				3A0DE365260501A500BC0E2A /* LaunchScreen.storyboard */,
+				3A0DE35A260501A500BC0E2A /* AppDelegate.swift */,
+				3A0DE35C260501A500BC0E2A /* SceneDelegate.swift */,
+				3A0DE368260501A500BC0E2A /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,7 +353,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AS4ZG3MAQH;
-				INFOPLIST_FILE = WhatFlowerV1/Info.plist;
+				INFOPLIST_FILE = "WhatFlowerV1/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -340,7 +372,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AS4ZG3MAQH;
-				INFOPLIST_FILE = WhatFlowerV1/Info.plist;
+				INFOPLIST_FILE = "WhatFlowerV1/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
