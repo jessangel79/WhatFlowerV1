@@ -22,7 +22,7 @@
                                     <constraint firstAttribute="width" secondItem="7ho-nc-1cm" secondAttribute="height" multiplier="1:1" id="hrL-b5-Z46"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hav-0m-A1Q">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hav-0m-A1Q">
                                 <rect key="frame" x="10" y="374" width="300" height="184"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>

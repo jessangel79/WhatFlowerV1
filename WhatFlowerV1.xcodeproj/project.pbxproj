@@ -15,6 +15,10 @@
 		3A0DE367260501A500BC0E2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0DE365260501A500BC0E2A /* LaunchScreen.storyboard */; };
 		3A0DE372260501DF00BC0E2A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3A0DE371260501DF00BC0E2A /* Alamofire */; };
 		3A0DE376260501EC00BC0E2A /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 3A0DE375260501EC00BC0E2A /* SwiftyJSON */; };
+		3A0DE380260507FE00BC0E2A /* FlowerClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3A0DE37F260507FE00BC0E2A /* FlowerClassifier.mlmodel */; };
+		3A0DE3832605082600BC0E2A /* WikiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0DE3822605082600BC0E2A /* WikiProtocol.swift */; };
+		3A0DE3862605083F00BC0E2A /* WikiSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0DE3852605083F00BC0E2A /* WikiSession.swift */; };
+		3A0DE3892605084A00BC0E2A /* WikiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0DE3882605084A00BC0E2A /* WikiService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		3A0DE363260501A500BC0E2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A0DE366260501A500BC0E2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A0DE368260501A500BC0E2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A0DE37F260507FE00BC0E2A /* FlowerClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FlowerClassifier.mlmodel; sourceTree = "<group>"; };
+		3A0DE3822605082600BC0E2A /* WikiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiProtocol.swift; sourceTree = "<group>"; };
+		3A0DE3852605083F00BC0E2A /* WikiSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiSession.swift; sourceTree = "<group>"; };
+		3A0DE3882605084A00BC0E2A /* WikiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,10 @@
 		3A0DE3792605040900BC0E2A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3A0DE3822605082600BC0E2A /* WikiProtocol.swift */,
+				3A0DE3852605083F00BC0E2A /* WikiSession.swift */,
+				3A0DE3882605084A00BC0E2A /* WikiService.swift */,
+				3A0DE37F260507FE00BC0E2A /* FlowerClassifier.mlmodel */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -202,7 +214,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A0DE3862605083F00BC0E2A /* WikiSession.swift in Sources */,
+				3A0DE380260507FE00BC0E2A /* FlowerClassifier.mlmodel in Sources */,
+				3A0DE3892605084A00BC0E2A /* WikiService.swift in Sources */,
 				3A0DE35F260501A500BC0E2A /* ViewController.swift in Sources */,
+				3A0DE3832605082600BC0E2A /* WikiProtocol.swift in Sources */,
 				3A0DE35B260501A500BC0E2A /* AppDelegate.swift in Sources */,
 				3A0DE35D260501A500BC0E2A /* SceneDelegate.swift in Sources */,
 			);
