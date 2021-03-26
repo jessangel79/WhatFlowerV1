@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 
 protocol WikiProtocol {
-    func request(flowerName: String, completionHandler: @escaping(AFDataResponse<Any>) -> Void) // @escaping (AFDataResponse<Any>) // @escaping (DataResponse<Any, AFError>)
+    func request(flowerName: String, completionHandler: @escaping(AFDataResponse<Any>) -> Void) // @escaping (DataResponse<Any, AFError>)
 }
 
 extension WikiProtocol {

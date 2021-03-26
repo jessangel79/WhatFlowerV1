@@ -74,8 +74,6 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
             guard let classification = request.results?.first as? VNClassificationObservation else {
                 fatalError("Could not classify image.")
             }
-//            flowerName = classification.identifier
-//            print(flowerName ?? "error name flower")
             navigationItem.title = classification.identifier.capitalized
             getFlowerDescription(flowerName: classification.identifier)
             print(classification.identifier.capitalized)
