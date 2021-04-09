@@ -8,6 +8,7 @@
 import UIKit
 import CoreML
 import Vision
+import SDWebImage
 
 final class ViewController: UIViewController {
     
@@ -19,6 +20,7 @@ final class ViewController: UIViewController {
     
     private let imagePicker = UIImagePickerController()
     private let wikiService = WikiService()
+    private var imageDefault: UIImage?
 
     // MARK: - Actions
     
@@ -41,7 +43,9 @@ final class ViewController: UIViewController {
             if result.isEmpty {
                 descriptionTextView.text = "Sorry no description available !"
             } else {
-                descriptionTextView.text = result
+                descriptionTextView.text = result.first
+                guard let imageResult = result.last else { return }
+                imageView.sd_setImage(with: URL(string: imageResult), placeholderImage: imageDefault)
                 print(result)
             }
         }
@@ -54,7 +58,8 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
         if let userPickedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
-            imageView.image = userPickedImage
+//            imageView.image = userPickedImage
+            imageDefault = userPickedImage
             guard let convertedCIImage = CIImage(image: userPickedImage) else { return }
             detect(flowerImage: convertedCIImage)
         }

@@ -22,12 +22,13 @@ class WikiSession: WikiProtocol {
         let parameters: [String: String] = [
             "format": "json",
             "action": "query",
-            "prop": "extracts",
+            "prop": "extracts|pageimages",
             "exintro": "",
             "explaintext": "",
             "titles": flowerName,
             "indexpageids": "",
-            "redirects": "1"
+            "redirects": "1",
+            "pithumbsize": "500"
         ]
         
         AF.request(wikipediaUrl, method: .get, parameters: parameters).responseJSON { (responseData) in

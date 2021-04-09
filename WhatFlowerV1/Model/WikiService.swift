@@ -20,7 +20,7 @@ final class WikiService {
     
     // MARK: - Methods
     
-    func getFlowerDescription(flowerName: String, completionHandler: @escaping (Bool, String?) -> Void) {
+    func getFlowerDescription(flowerName: String, completionHandler: @escaping (Bool, [String]?) -> Void) {
         wikiSession.request(flowerName: flowerName) { (responseData) in
             
             guard responseData.response?.statusCode == 200 else {
@@ -35,7 +35,9 @@ final class WikiService {
                 let flowerJSON: JSON = JSON(value)
                 let pageid = flowerJSON["query"]["pageids"][0].stringValue
                 let flowerDescription = flowerJSON["query"]["pages"][pageid]["extract"].stringValue
-                completionHandler(true, flowerDescription)
+                let flowerImageURL = flowerJSON["query"]["pages"][pageid]["thumbnail"]["source"].stringValue
+                let flowerDatas = [flowerDescription, flowerImageURL]
+                completionHandler(true, flowerDatas) // flowerDescription
             } else {
                 completionHandler(false, nil)
                 return
