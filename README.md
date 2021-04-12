@@ -21,3 +21,7 @@ https://storage.googleapis.com/images-angelappdev/CoreML/FlowerClassifier.mlmode
 #### API Wikipedia :
 
 https://en.wikipedia.org/w/api.php
+
+####  CoreML and Machine & Learning Advanced CoreML - CoreML Tools & Converting Models :
+
+GitHub of The App Brewery : https://github.com/appbrewery/WhatFlower-Completed-iOS13
