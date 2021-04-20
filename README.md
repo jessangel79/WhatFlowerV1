@@ -1,7 +1,7 @@
 # WhatFlowerV1
 
 
-![platform-ios](https://img.shields.io/badge/platform-ios-lightgrey.svg) ![swift-version](https://img.shields.io/badge/swift-5.0-red.svg) ![device](https://img.shields.io/badge/Device-iPhone--iPad-green)
+![platform-ios](https://img.shields.io/badge/platform-ios-lightgrey.svg) ![swift-version](https://img.shields.io/badge/swift-5.3-red.svg) ![device](https://img.shields.io/badge/Device-iPhone--iPad-green)
 ![version](https://img.shields.io/badge/Version-1.0-blue)
 
 ### Fonctionnalités :
@@ -18,7 +18,7 @@ To use this project, please download the **FlowerClassifier.mlmodel** file with 
 CoreML file:
 https://storage.googleapis.com/images-angelappdev/CoreML/FlowerClassifier.mlmodel
 
-#### API Wikipedia :
+#### Wikipedia API :
 
 https://en.wikipedia.org/w/api.php
 
